@@ -29,10 +29,6 @@ def password_check(x):
         print("Your password is missing a digit. Try again.")
     if up > 0 and low > 0 and dig > 0:
         print("The password you have entered is valid.")
-        
-x = input("Please enter a password: ")
-password_check(x)
-
 
 password = []
 upcase = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
@@ -53,7 +49,5 @@ random.shuffle(password)
 final = "".join(str(x) for x in password)
 
 
-
-password_creator()
-
+print(final)
 password_check(final)
